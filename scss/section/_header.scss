@@ -51,9 +51,11 @@
   .add-font{
     display: none;
     visibility: hidden;
+    font-size: 25px;
   }
   .remove-font{
     display: block;
+    font-size: 25px;
     visibility: visible;
   }
   &:hover{

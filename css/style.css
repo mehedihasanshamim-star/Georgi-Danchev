@@ -337,10 +337,12 @@ button:focus {
 .nabMenuBar .add-font {
   display: none;
   visibility: hidden;
+  font-size: 25px;
 }
 
 .nabMenuBar .remove-font {
   display: block;
+  font-size: 25px;
   visibility: visible;
 }
 
