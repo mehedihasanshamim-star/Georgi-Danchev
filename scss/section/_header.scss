@@ -1,0 +1,243 @@
+.navbar {
+  display: flex;
+  padding: 1.375rem 0px;
+  align-items: center;
+  @media #{$small_mobile}{
+    padding: 30px;
+  }
+  .logo{
+    @media #{$x_small_mobile}{
+      width: 200px;
+    }
+  }
+
+  .socil-link {
+    @media #{$small_mobile}{
+      display: none;
+    }
+    @media #{$x_small_mobile}{
+      display: none;
+    }
+    a {
+      display: inline-block;
+      color: #fff;
+      margin-left: 0.625rem;
+      transition: .4s;
+      i{
+        font-size: 1.563rem;
+      }
+      &:hover{
+        transform: translateY(-5px);
+        i{
+          color: $primary-color-1;
+        }
+      }
+    }
+  }
+}
+
+.nabMenuBar {
+  margin-left: 1.875rem;
+  display: block;
+  background-color: $primary-color-1;
+  width: 55px;
+  text-align: center;
+  border-radius: 5px;
+  height: 55px;
+  color: $secondary-color-1;
+  line-height: 55px;
+  transition: .4s;
+  padding: 0 1.125rem;
+  .add-font{
+    display: none;
+    visibility: hidden;
+  }
+  .remove-font{
+    display: block;
+    visibility: visible;
+  }
+  &:hover{
+    background-color: $secondary-color-1;
+    color: $primary-color-1;
+  }
+}
+.nabMenuBar.link-font{
+  .add-font{
+    display: block;
+    visibility: visible;
+  }
+  .remove-font{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.nav-menu-item {
+  text-decoration: none;
+  color: $white;
+  margin-top: 4.375rem;
+  transition: .4s;
+  display: block;
+  font-family: $heading_font;
+  font-weight: $font_bold;
+  font-size: 3.438rem;
+  @media #{$small_mobile}{
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  @media #{$large_mobile}{
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  @media #{$tab_device}{
+    font-size: 2.4rem;
+  }
+}
+ul{
+  li{
+    &:nth-child(1) .nav-menu-item{
+      @media #{$small_mobile}{
+        margin-top: 8rem;
+      }
+      @media #{$large_mobile}{
+        margin-top: 8rem;
+      }
+      @media #{$x_small_mobile}{
+        margin-top: 12rem;
+      }
+    }
+  }
+}
+
+.nav-menu-item:hover {
+  text-decoration: none;
+  color: $primary-color-1;
+  transition: 0.1s;
+}
+
+.sideNavOpen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-left: 0.625rem;
+  padding-top: 1.25rem;
+  transition: 0.4s;
+  background-color: $secondary-color-2;
+}
+
+.sideNavClose {
+  height: 0;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-left: 0.625rem;
+  padding-top: 1.25rem;
+  transition: 0.4s;
+  visibility: hidden;
+  background-color: $primary-color-1;
+}
+.sticky{
+  background-color: $primary-color-1;
+  .nabMenuBar {
+    background-color: $secondary-color-1;
+    i{
+      color: $primary-color-1;
+    }
+  }
+  .socil-link{
+    a{
+      &:hover{
+        i{
+          color: $secondary-color-1;
+        }
+      }
+    }
+  }
+}
+ /* preloader */
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: $secondary-color-1;
+  img{
+    @media #{$large_mobile}{
+      width: 400px;
+    }
+    @media #{$small_mobile}{
+      width: 400px;
+    }
+    @media #{$x_small_mobile}{
+      width: 300px;
+    }
+  }
+}
+
+.dots .dot {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 10px;
+  border-radius: 50%;
+  background: $primary-color-1;
+  animation: dot-dot-dot .8s infinite alternate;
+}
+
+.dots .dot:nth-child(1) {
+  animation-delay: .1s;
+}
+
+.dots .dot:nth-child(2) {
+  animation-delay: .2s;
+}
+.dots .dot:nth-child(3) {
+  animation-delay: .3s;
+}
+.dots .dot:nth-child(4) {
+  animation-delay: .4s;
+}
+.dots .dot:nth-child(5) {
+  animation-delay: .5s;
+}
+
+@keyframes dot-dot-dot {
+  0%{
+    transform: translateY(13px)
+  }
+  25%{
+    transform: translateY(0px)
+  }
+  50%{
+    transform: translateY(-13px)
+  }
+  75%{
+    transform: translateY(13px)
+  }
+  100%{
+    transform: translateY(13px)
+  }
+}
+/* preloader */

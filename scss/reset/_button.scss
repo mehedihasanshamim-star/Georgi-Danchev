@@ -1,0 +1,25 @@
+/******** base color css ********/
+button:active {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: 0;
+}
+%common-btn{
+    display: inline-block;
+    background-color: $primary-color-1;
+    border: 1px solid transparent;
+    padding: 1.25rem 2.188rem;
+    border-radius: 0.313rem;
+    color: $black;
+    font-size: 1rem;
+    transition: .4s;
+    font-weight: $font_bold;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $secondary-color-1;
+        border: 1px solid #686868;
+        color: #fff;
+    }
+}

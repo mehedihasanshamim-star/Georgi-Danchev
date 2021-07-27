@@ -1,0 +1,84 @@
+.banner{
+    height: 960px;
+    background-image: url(../img/banner-bg.png);
+    background-color: $secondary-color-1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media #{$large_mobile}{
+        height: 680px;
+    }
+    @media #{$small_mobile}{
+        height: 500px;
+    }
+    @media #{$x_small_mobile}{
+        height: 400px;
+    }
+}
+.banner-title{
+    span.type{
+        color: $primary-color-1;
+    }
+    @media #{$large_mobile}{
+        font-size: 2.875rem;
+    }
+}
+.typed-cursor{
+    opacity: 0 !important;
+}
+
+.banner-content{
+    color: $white;
+    font-size: 1.625rem;
+    margin-top: 1.5rem;
+}
+.down-btn{
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+    z-index: 9;
+    position: absolute;
+    height: 126px;
+    width: 126px;
+    line-height: 126px;
+    border-radius: 63px 63px 0 0;
+    text-align: center;
+    background-color: $secondary-color-1;
+    @media #{$large_mobile}{
+        height: 90px;
+        width: 100px;
+        line-height: 90px;
+    }
+    @media #{$small_mobile}{
+        height: 60px;
+        line-height: 80px;
+    }
+    @media #{$x_small_mobile}{
+        height: 70px;
+        line-height: 80px;
+    }
+    i{
+        color: $white;
+        font-size: 2.813rem;
+        animation-name: down;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-play-state: running;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @media #{$large_mobile}{
+           font-size: 1.813rem;
+        }
+    }
+}
+
+@keyframes down {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    60% { opacity: 0.60; }
+    100% { opacity: 0; }
+}

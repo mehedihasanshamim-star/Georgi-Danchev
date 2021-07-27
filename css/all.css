@@ -1,0 +1,148 @@
+/**************** common css start ****************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar .navbar-toggler {
+  border: 2px solid #eb7d4b;
+}
+
+.navbar .navbar-toggler span {
+  display: block;
+  height: 2px;
+  width: 40px;
+  background-color: #eb7d4b;
+  margin: 5px;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+input:hover,
+input:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 0px 0px transparent;
+          box-shadow: 0px 0px 0px 0px transparent;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+
+.custom-file-input:focus ~ .custom-file-label {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*::placeholder {
+    color: white !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+   
+  }
+.form-control{
+      border: 0 !important;
+}*/
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  color: #0b1c36;
+}
+
+h1 {
+  font-size: 4.688rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.438rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 1.375rem;
+  font-weight: 800;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.375rem;
+  margin-bottom: 0px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.ml-lg-30 {
+  margin-left: 24px;
+}
+
+a:focus,
+.button:focus,
+button:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media (min-width: 1400px) {
+  .w-1680 {
+    max-width: 1710px;
+  }
+  .w-container {
+    max-width: 1200px;
+  }
+}
+
+/**************** common css end ****************/
+/******** base color css ********/
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+/*# sourceMappingURL=all.css.map */

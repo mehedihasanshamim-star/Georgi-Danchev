@@ -1,0 +1,122 @@
+.blog{
+    padding-bottom: 10.625rem;
+    padding-top: 8rem;
+    background-color: $secondary-color-1;
+    @media #{$tab_device}{
+        padding-top: 2rem;
+    }
+    @media #{$large_mobile}{
+        padding-top: 8rem;
+        .mb-sm-70{
+            margin-bottom: 70px;
+        }
+        .mb-sm-30{
+            margin-bottom: 30px;
+        }
+        .common-hadding{
+            margin-top: 0;
+        }
+    }
+    @media #{$small_mobile}{
+        padding: 20px;
+        padding-bottom: 70px;
+        .mb-sm-70{
+            margin-bottom: 30px;
+        }
+        .mb-sm-30{
+            margin-bottom: 20px;
+        }
+    }
+    @media #{$x_small_mobile}{
+        padding: 10px;
+        padding-bottom: 70px;
+        .mb-sm-70{
+            margin-bottom: 50px;
+        }
+        .mb-sm-30{
+            margin-bottom: 15px;
+        }
+        .common-hadding{
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}
+.blog-hadding{
+    margin-bottom: 3.625rem;
+    @media #{$large_mobile}{
+        margin-bottom: 1rem;
+    }
+    @media #{$small_mobile}{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+.hadding-btn{
+    @extend %common-btn;
+}
+.single-blog{
+    background-color: $secondary-color-2;
+    border-radius: 6px;
+    padding: 35px 33px;
+    transition: .4s;
+    @media #{$x_small_mobile}{
+        padding: 6px;
+    }
+    @media #{$small_mobile}{
+        padding: 12px;
+    }
+    .single-blog-text{
+        padding-left: 2.375rem;
+        .sin-blog-hadding{
+            font-size: 1.625rem;
+            font-weight: $font_bold;
+            margin-bottom: 1.375rem;
+            transition: .4s;
+            @media #{$medium_device}{
+                font-size: 1.250rem;
+            }
+        }
+        ul{
+            li{
+                margin-right: 1.563rem;
+                p{
+                    display: inline-block;
+                    color: #c6c6c6;
+                    transition: .4s;
+                }
+                i{
+                    color: $primary-color-1;
+                    margin-right: 0.625rem;
+                    transition: .4s;
+                }
+            }
+        }
+    }
+    &:hover{
+        background-color: $primary-color-1;
+        .single-blog-text{
+            .sin-blog-hadding{
+                color: #000 !important;
+            }
+            ul{
+                li{
+                    i{
+                        color: #000;
+                    }
+                    p{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+.mt-30{
+    margin-top: 1.875rem;
+}
+@media #{$tab_device}{
+    .mb-md-30{
+        margin-bottom: 30px;
+    }
+}

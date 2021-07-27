@@ -1,0 +1,66 @@
+.contact{
+    padding-top: 8.75rem;
+    height: 960px;
+    background-image: url(../img/contact-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $secondary-color-1;
+    @media #{$tab_device}{
+        height: 1440px;
+    }
+    @media #{$large_mobile}{
+        height: 1280px;
+    }
+    @media #{$small_mobile}{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media #{$x_small_mobile}{
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 800px;
+    }
+}
+.contact-about{
+    background-color: $secondary-color-2;
+    padding: 5rem 4.688rem 4.688rem 3.438rem;
+    .contact-right{
+        @media #{$tab_device}{
+           margin-top: 40px;
+        }
+        @media #{$large_mobile}{
+           margin-top: 30px;
+        } 
+        @media #{$small_mobile}{
+            margin-top: 30px;
+        }
+
+        h2{
+            margin-bottom: 2.5rem;
+        }
+        input{
+            border: 1px solid #c6c6c6;
+            margin-bottom: 1.25rem;
+            padding: 1.25rem 1.25rem;
+            color: #c6c6c6;
+            background-color: $secondary-color-1;
+            ::placeholder{
+                color: #c6c6c6;
+            }
+        }
+        textarea{
+            height: 167px;
+            margin-bottom: 1.25rem;
+            color: #c6c6c6;
+            border: 1px solid #c6c6c6;
+            background-color: $secondary-color-1;
+        }
+        .form-control:focus{
+            box-shadow: none;
+        }
+        .from-btn{
+            @extend %common-btn;
+        }
+    }
+}

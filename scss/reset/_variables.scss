@@ -1,0 +1,48 @@
+$heading_font: 'Playfair Display', serif;
+$body_font: 'Inter', sans-serif;
+
+//color
+$white: #fff;
+$black: #000;
+$primary-color-1: #FFC576;
+$secondary-color-1: #181A29;
+$secondary-color-2: #23263E;
+$secondary-color-3: #666A8F;
+$heading_color: #fff;
+
+//typography
+$h1_font_size: 3.875rem;
+$h2_font_size: 3.438rem;
+
+$h3_font_size: 2.5rem;
+$body_font_size: 1rem;
+
+//font weight
+$font_black: 900;
+$font_extra_bold: 800;
+$font_bold: 700;
+$font_semi_bold: 600;
+$font_medium: 500;
+$font_ragular: 400;
+$font_light: 300;
+$font_ex_light: 300;
+
+
+//font line height
+$body_line_height: 1.5;
+
+
+$big_device: '(min-width: 991px)';
+$tab: '(max-width: 991px)';
+$mobile:'(max-width: 767.98px)';
+$xs_mobile:'(max-width: 576px)';
+
+$extra_big_screen: 'only screen and (min-width: 1441px) and (max-width: 1680px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1441px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767.98px)';
+$small_mobile: 'only screen and (min-width: 420px) and (max-width: 575px)';
+$x_small_mobile: 'only screen and (min-width: 320px) and (max-width: 419px)';
+
+$large_small: 'only screen and (min-width: 420px) and (max-width: 1200px)';
